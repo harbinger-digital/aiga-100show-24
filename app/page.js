@@ -12,19 +12,7 @@ export default function Home() {
     <div className='font-geist px-16'>
       <Navbar />
       <Spinner />
-      <motion.div
-        animate={{ opacity: [0.2, 0.6] }}
-        transition={{ duration: 4, repeat: Infinity, repeatType: 'mirror' }}
-      >
-        <div className='bg-[#F60011] rounded-full blur-[200px] h-[904px] w-[904px] fixed bottom-0 left-0 transform -translate-x-1/2 translate-y-1/2 mix-blend-overlay opacity-40 -z-30'></div>
-      </motion.div>
-      <motion.div
-        animate={{ opacity: [0.2, 0.6] }}
-        transition={{ duration: 4, repeat: Infinity, repeatType: 'mirror' }}
-      >
-        <div className='bg-[#F60011] rounded-full blur-[200px] h-[904px] w-[904px] fixed top-0 right-0 transform translate-x-1/2 -translate-y-1/2 mix-blend-overlay opacity-40 -z-30'></div>
-      </motion.div>
-      <div className='flex flex-col gap-32 lg:gap-48 mx-auto w-full max-w-3xl items-center py-[30vh] h-md:py-[34vh] h-lg:py-[30vh] transition-all duration-500'>
+      <div className='flex flex-col gap-32 lg:gap-48 mx-auto w-full max-w-3xl items-center py-[30vh] h-md:py-[34vh] h-lg:py-[30vh] transition-all duration-500 z-30'>
         <Hero />
         <div className='flex flex-col gap-6 w-full'>
           <h2 className='font-bely uppercase text-3xl tracking-widest text-white'>About The Show</h2>
