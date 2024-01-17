@@ -45,7 +45,7 @@ export default function Navbar() {
   const [timeLeft, setTimeLeft] = useState({})
 
   useEffect(() => {
-    const targetDate = new Date('2024-02-01T00:00:00') // set your target date here
+    const targetDate = new Date('2024-02-25T23:59:00-05:00') // set your target date here
 
     const calculateTimeLeft = () => {
       const difference = +targetDate - +new Date()
@@ -85,6 +85,12 @@ export default function Navbar() {
 
   const stopAnimation = () => {
     controls.start('initial')
+  }
+
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
+
+  const toggleMobileNav = () => {
+    setIsMobileNavOpen(!isMobileNavOpen)
   }
 
   return (
@@ -146,16 +152,36 @@ export default function Navbar() {
         </div>
       </div>
       {/* mobile */}
+      <motion.div
+        className={`${
+          isMobileNavOpen ? 'fixed top-0 right-0 bottom-0 left-0 z-50' : 'hidden'
+        } bg-black/80 backdrop-blur-lg flex flex-col justify-center items-center`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.4 }}
+      >
+        <div className='flex flex-col gap-4'>
+          <Link href='/' className='text-white font-[800] text-base uppercase tracking-widest'>
+            Tickets
+          </Link>
+          <Link href='/' className='text-white font-[800] text-base uppercase tracking-widest'>
+            Submit
+          </Link>
+          <button className='text-white font-[800] text-base uppercase tracking-widest' onClick={toggleMobileNav}>
+            Close
+          </button>
+        </div>
+      </motion.div>
       <div className='flex md:hidden'>
         <div className='group flex relative' onMouseEnter={startAnimation} onMouseLeave={stopAnimation}>
-          <Link
-            href='/'
+          <button
             className={`flex gap-3 px-3 py-2 rounded justify-center items-center transition-all duration-300 z-10 ${
               isScrolled ? 'group-hover:bg-black/10' : 'group-hover:bg-black/5'
             }`}
+            onClick={toggleMobileNav}
           >
             <HamburgerMenuIcon className='text-white w-6 h-6' />
-          </Link>
+          </button>
           <motion.div
             className={`absolute top-0 right-0 bottom-0 left-0 rounded border border-1 transition-all  ${
               isScrolled ? '' : 'backdrop-blur-[4px]'
