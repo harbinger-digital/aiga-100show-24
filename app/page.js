@@ -143,11 +143,9 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value='item-4'>
-                <AccordionTrigger>Will There be food?</AccordionTrigger>
+                <AccordionTrigger>Will there be food?</AccordionTrigger>
                 <AccordionContent>
-                  The 100 Show is a competition that brings designers from all over our region to submit their best work
-                  in a cross-disciplinary competition. We call for a wide net of entries including advertising,
-                  branding, packaging, environmental design, interactive design, service design, and more.
+                  Yes, there will be food and drinks provided! The ticket includes one free drink.
                 </AccordionContent>
               </AccordionItem>
               {/* <div className='h-[1px] w-full px-4 my-1'></div> */}
@@ -212,7 +210,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value='item-8'>
-                <AccordionTrigger>Who do I contact about college discounts?</AccordionTrigger>
+                <AccordionTrigger>Who do I contact about college and high school discounts?</AccordionTrigger>
                 <AccordionContent>
                   All student discounts have been issued through known educators in the surrounding areas. These
                   parameters include Kentucky and southern Indiana colleges, and specifically Louisville high schools.
