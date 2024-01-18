@@ -95,7 +95,7 @@ export default function Navbar() {
 
   return (
     <motion.div
-      className={`z-50 fixed top-0 right-0 left-0 px-8 flex justify-between items-center border border-b border-black/[8%] ${
+      className={`z-50 fixed top-0 right-0 left-0 px-6 sm:px-8 flex justify-between items-center border border-b border-black/[8%] ${
         isScrolled ? 'backdrop-blur-lg' : ''
       }`}
       variants={navbarVariants}
@@ -107,7 +107,7 @@ export default function Navbar() {
         <Image src='/Logo.png' alt='AIGA 100 Show Logo' width={120} height={32} className='h-8' />
       </Link>
       <div className='gap-2 hidden md:flex'>
-        <div className='group flex relative' onMouseEnter={startAnimation} onMouseLeave={stopAnimation}>
+        {/* <div className='group flex relative' onMouseEnter={startAnimation} onMouseLeave={stopAnimation}>
           <Link
             href='/'
             className={`flex gap-3 px-6 py-4 rounded justify-center items-center transition-all duration-300 z-10 ${
@@ -126,10 +126,10 @@ export default function Navbar() {
             animate={isScrolled ? 'scrolled' : 'initial'}
             transition={{ duration: 0.8 }}
           ></motion.div>
-        </div>
+        </div> */}
         <div className='group flex relative' onMouseEnter={startAnimation} onMouseLeave={stopAnimation}>
           <Link
-            href='/'
+            href='https://aiga-chapters.secure-platform.com/a/page/chapters/louisville'
             className={`flex gap-3 min-w-[334px] px-6 py-4 rounded justify-start items-center transition-all duration-300 z-10 ${
               isScrolled ? 'group-hover:bg-black/10' : 'group-hover:bg-black/5'
             }`}
@@ -172,7 +172,7 @@ export default function Navbar() {
           </button>
         </div>
       </motion.div>
-      <div className='flex md:hidden'>
+      {/* <div className='flex md:hidden'>
         <div className='group flex relative' onMouseEnter={startAnimation} onMouseLeave={stopAnimation}>
           <button
             className={`flex gap-3 px-3 py-2 rounded justify-center items-center transition-all duration-300 z-10 ${
@@ -192,7 +192,7 @@ export default function Navbar() {
             transition={{ duration: 0.8 }}
           ></motion.div>
         </div>
-      </div>
+      </div> */}
     </motion.div>
   )
 }
