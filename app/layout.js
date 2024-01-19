@@ -1,5 +1,6 @@
 import { GeistSans } from 'geist/font/sans'
 import localFont from 'next/font/local'
+import Script from 'next/script'
 
 import './globals.css'
 
@@ -16,6 +17,13 @@ const bely = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      <head>
+        <script
+          defer
+          src='https://us.umami.is/script.js'
+          data-website-id='8dce5e52-3afd-4ad5-9135-13cf849bc522'
+        ></script>
+      </head>
       <body className={`${GeistSans.className} ${bely.variable}`}>{children}</body>
     </html>
   )
