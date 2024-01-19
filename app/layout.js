@@ -18,11 +18,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <head>
-        <script
+        <Script
           defer
           src='https://us.umami.is/script.js'
           data-website-id='8dce5e52-3afd-4ad5-9135-13cf849bc522'
-        ></script>
+        ></Script>
       </head>
       <body className={`${GeistSans.className} ${bely.variable}`}>{children}</body>
     </html>
