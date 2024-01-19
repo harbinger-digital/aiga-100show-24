@@ -8,7 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 export default function Home() {
   return (
-    <div className='font-geist px-6 sm:px-8 md:px-16 transition-all duration-500'>
+    <div className='font-geist px-6 sm:px-8 md:px-16 transition-all duration-500 relative'>
       <Navbar />
       <Spinner />
       <div className='flex flex-col gap-32 lg:gap-48 mx-auto w-full max-w-3xl items-center pt-[30vh] pb-[10vh] md:pb-[10vh] lg:pb-[20vh] h-md:pt-[34vh] h-lg:pt-[30vh] transition-all duration-500 z-30'>

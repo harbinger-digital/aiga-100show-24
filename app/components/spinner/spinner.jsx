@@ -13,18 +13,18 @@ export default function Spinner() {
       <motion.div
         animate={{ opacity: [0.2, 0.6] }}
         transition={{ duration: 4, repeat: Infinity, repeatType: 'mirror' }}
-        className='relative -z-30'
+        className='relative -z-10'
       >
         <div className='bg-[#F60011] rounded-full blur-[200px] h-[904px] w-[904px] fixed bottom-0 left-0 transform -translate-x-1/2 translate-y-1/2 mix-blend-overlay opacity-40'></div>
       </motion.div>
       <motion.div
         animate={{ opacity: [0.2, 0.6] }}
         transition={{ duration: 4, repeat: Infinity, repeatType: 'mirror' }}
-        className='relative -z-30'
+        className='relative -z-10'
       >
         <div className='bg-[#F60011] rounded-full blur-[200px] h-[904px] w-[904px] fixed top-0 right-0 transform translate-x-1/2 -translate-y-1/2 mix-blend-overlay opacity-40'></div>
       </motion.div>
-      <div className='fixed bottom-0 left-0 transform -translate-x-1/2 translate-y-1/2 mix-blend-soft-light opacity-40 -z-30'>
+      <div className='fixed bottom-0 left-0 transform -translate-x-1/2 translate-y-1/2 mix-blend-soft-light opacity-40 -z-10'>
         <div className='relative flex flex-col items-center justify-center left-1/2 transform -translate-x-1/2 -translate-y-1/8 w-[500px] h-[500px]'>
           <motion.div
             className='absolute w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] 2xl:w-[400px] 2xl:h-[400px] transition-all duration-500'
