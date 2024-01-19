@@ -22,7 +22,7 @@ export default function Hero() {
             className='flex gap-3 px-6 py-4 justify-center items-center z-10'
           >
             <p className='text-white font-[800] text-base uppercase tracking-widest text-center'>
-              Submit Work by feb 25
+              Submit Work by feb&nbsp;25
             </p>
           </Link>
           <div className='absolute top-0 right-0 bottom-0 left-0 rounded-full backdrop-blur-[4px] bg-black/[6%] border border-1 border-black/[8%] group-hover:bg-black/10 transition-all duration-300'></div>
