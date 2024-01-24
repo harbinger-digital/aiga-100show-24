@@ -1,10 +1,11 @@
 'use client'
 
-import Background from './components/background/background'
-import Hero from './components/hero/hero'
-import Spinner from './components/spinner/spinner'
-import Navbar from './components/nav/navbar'
+import Background from './components/background'
+import Hero from './components/hero'
+import Spinner from './components/spinner'
+import Navbar from './components/navbar'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
+import Footer from './components/footer'
 
 export default function Home() {
   return (
@@ -230,6 +231,7 @@ export default function Home() {
         </div>
       </div>
       <Background />
+      <Footer />
     </div>
   )
 }
