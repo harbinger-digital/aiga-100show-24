@@ -31,7 +31,7 @@ export default function Spinner() {
             animate={shouldReduceMotion ? {} : { rotate: 180 }}
             transition={{ duration: 50, repeat: Infinity, repeatType: 'loop' }}
           >
-            <Image src='/Bee_Butterfly_level_1.png' layout='fill' alt='butterfly and bee pattern' />
+            <Image src='/Bee_Butterfly_level_1.png' fill={true} alt='butterfly and bee pattern' />
           </motion.div>
           <motion.div
             className='absolute w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] 2xl:w-[700px] 2xl:h-[700px] transition-all duration-500'
