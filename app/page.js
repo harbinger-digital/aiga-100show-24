@@ -6,6 +6,7 @@ import Spinner from './components/spinner'
 import Navbar from './components/navbar'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import Footer from './components/footer'
+import JudgesCard from './components/judgesCard'
 
 export default function Home() {
   return (
@@ -23,6 +24,29 @@ export default function Home() {
             more. The awards culminate in the top 100 works – showcasing the Best of Category winners and a single work
             that is Best of Show.
           </p>
+        </div>
+        <div className='flex flex-col gap-6 w-full'>
+          <h2 className='font-bely uppercase text-3xl tracking-widest text-white'>Judges</h2>
+          <div className='flex gap-4 w-full flex-col md:flex-row'>
+            <JudgesCard
+              src='/judges/shivani-parasnis.jpg'
+              alt='Shivani Parasnis Headshot'
+              name='Shivani Parasnis'
+              description='typographer, graphic designer'
+            />
+            <JudgesCard
+              src='/judges/shivani-parasnis.jpg'
+              alt='Geoge Garrastregui Headshot'
+              name='George Garrastegui, Jr.'
+              description='educator, designer'
+            />
+            <JudgesCard
+              src='/judges/shivani-parasnis.jpg'
+              alt='Jeff Minnichbach Headshot'
+              name='Jeff Minnichbach'
+              description='graphic designer'
+            />
+          </div>
         </div>
         <div className='flex flex-col gap-6 w-full'>
           <h2 className='font-bely uppercase text-3xl tracking-widest text-white'>FAQs</h2>
