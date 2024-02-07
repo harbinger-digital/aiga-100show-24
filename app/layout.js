@@ -7,6 +7,16 @@ import './globals.css'
 export const metadata = {
   title: 'AIGA Lou 100 Show',
   description: 'AIGA Lou 100 Show',
+  metadataBase: new URL('https://www.aigaloutop100.com/'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+    },
+  },
+  openGraph: {
+    images: '/appopengraph-image.png',
+  },
 }
 
 const bely = localFont({
