@@ -26,7 +26,11 @@ export default function Home() {
           </p>
         </div>
         <div className='flex flex-col gap-6 w-full'>
-          <h2 className='font-bely uppercase text-3xl tracking-widest text-white'>Judges</h2>
+          <div className='flex justify-center items-center gap-8 self-stretch'>
+            <div className='w-full h-px relative bg-white' />
+            <h4 className='font-bely uppercase text-3xl tracking-widest text-white'>Judges</h4>
+            <div className='w-full h-px relative bg-white' />
+          </div>
           <div className='flex gap-4 w-full flex-col md:flex-row'>
             <JudgesCard
               src='/judges/shivani-parasnis.jpg'
