@@ -7,7 +7,7 @@ export default function JudgesCard({ src, alt, name, description }) {
       <div className='h-36 w-36 md:h-full md:w-full relative flex-shrink-0 md:shrink'>
         <Image src={src} alt={alt} fill={true} style={{ objectFit: 'cover' }} />
       </div>
-      <div className='flex flex-col justify-between md:justify-start w-full grow gap-2 p-4 backdrop-blur-[4px] bg-black/[6%] border border-1 border-black/[8%] group-hover:bg-black/10 transition-all duration-300'>
+      <div className='flex flex-col justify-between w-full md:h-[250px] lg:h-[150px] gap-2 p-4 backdrop-blur-[4px] bg-black/[6%] border border-1 border-black/[8%] group-hover:bg-black/10 transition-all duration-300'>
         <h3 className='text-white font-[800] text-xl leading-6 uppercase tracking-widest'>{name}</h3>
         <p className='text-white font-[400] text-sm md:text-base uppercase tracking-widest'>{description}</p>
       </div>
