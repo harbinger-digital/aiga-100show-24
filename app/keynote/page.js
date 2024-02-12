@@ -14,7 +14,7 @@ export default function Page() {
           </div>
           <div className='flex flex-col items-start w-full gap-8'>
             <div className='flex flex-col items-start gap-1 self-stretch'>
-              <h1 className='self-stretch text-white font-bely text-5xl leading-tighter font-normal tracking-widest uppercase'>
+              <h1 className='self-stretch text-white font-bely text-3xl lg:text-5xl leading-tighter font-normal tracking-widest uppercase'>
                 Kaviya Ravi
               </h1>
               <h2 className='self-stretch text-white text-lg font-[350] leading-7 tracking-[1.44px] capitalize'>

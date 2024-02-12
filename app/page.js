@@ -87,7 +87,7 @@ export default function Home() {
               alt='Geoge Garrastregui Headshot'
               name='George Garrastegui, Jr.'
               description='educator, designer'
-              href='/george-garrastregui'
+              href='/george-garrastegui'
               position='top'
             />
             <JudgesCard
