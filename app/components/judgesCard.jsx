@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function JudgesCard({ src, alt, name, description, href, position }) {
+export default function JudgesCard({ alt, name, description, href, position, hoverSrc }) {
   return (
     <Link href={href} className='flex md:flex-col md:h-[412px] basis-full overflow-clip rounded group'>
       <div className='h-36 w-28 md:h-full md:w-full relative flex-shrink-0 md:shrink overflow-clip'>
         <Image
-          src={src}
+          src={hoverSrc}
           alt={alt}
           fill={true}
           style={{ objectFit: 'cover', objectPosition: `center ${position}` }}

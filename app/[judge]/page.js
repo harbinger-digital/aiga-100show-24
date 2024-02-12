@@ -104,7 +104,8 @@ export default function Page({ params }) {
               name='Shivani Parasnis'
               description='typographer, graphic designer'
               href='/shivani-parasnis'
-              position='10%'
+              position='35%'
+              hoverSrc='/judges/shivani-parasnis-hover.png'
             />
             <JudgesCard
               src='/judges/george-garrastegui.jpg'
@@ -112,6 +113,8 @@ export default function Page({ params }) {
               name='George Garrastegui, Jr.'
               description='educator, designer'
               href='/george-garrastegui'
+              position='30%'
+              hoverSrc='/judges/george-garrastegui-hover.png'
             />
             <JudgesCard
               src='/judges/jeff-minnichbach.jpg'
@@ -119,7 +122,8 @@ export default function Page({ params }) {
               name='Jeff Minnichbach'
               description='graphic designer'
               href='/jeff-minnichbach'
-              position='10%'
+              position='20%'
+              hoverSrc='/judges/jeff-minnichbach-hover.png'
             />
           </div>
         </div>

@@ -81,6 +81,7 @@ export default function Home() {
               description='typographer, graphic designer'
               href='/shivani-parasnis'
               position='top'
+              hoverSrc='/judges/shivani-parasnis-hover.png'
             />
             <JudgesCard
               src='/judges/george-garrastegui.jpg'
@@ -89,6 +90,7 @@ export default function Home() {
               description='educator, designer'
               href='/george-garrastegui'
               position='top'
+              hoverSrc='/judges/george-garrastegui-hover.png'
             />
             <JudgesCard
               src='/judges/jeff-minnichbach.jpg'
@@ -97,6 +99,7 @@ export default function Home() {
               description='graphic designer'
               href='/jeff-minnichbach'
               position='top'
+              hoverSrc='/judges/jeff-minnichbach-hover.png'
             />
           </div>
         </div>
