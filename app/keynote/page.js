@@ -2,7 +2,6 @@ import Navbar from '../components/navbar'
 import Image from 'next/image'
 import Footer from '../components/footer'
 import Background from '../components/background'
-import Link from 'next/link'
 
 export default function Page() {
   return (
@@ -38,19 +37,19 @@ export default function Page() {
             </div>
             <div className='justify-center items-center gap-6 inline-flex'>
               <div className='w-6 h-6 relative'>
-                <Link href='/'>
+                <a href='https://khromophilia.com/' target='_blank'>
                   <Image src='/images/web_icon.svg' alt='Website' width='24' height='24' />
-                </Link>
+                </a>
               </div>
               <div className='w-6 h-6 relative'>
-                <Link href='/'>
+                <a href='https://www.instagram.com/kvyainc' target='_blank'>
                   <Image src='/images/insta_icon.svg' alt='Instagram' width='24' height='24' />
-                </Link>
+                </a>
               </div>
               <div className='w-6 h-6 relative'>
-                <Link href='/'>
+                <a href='https://www.linkedin.com/in/kaviya-ravi-65647450/' target='_blank'>
                   <Image src='/images/linkedIn_icon.svg' alt='LinkedIn' width='24' height='24' />
-                </Link>
+                </a>
               </div>
             </div>
           </div>
