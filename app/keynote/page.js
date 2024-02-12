@@ -10,7 +10,12 @@ export default function Page() {
       <div className='flex flex-col mx-auto w-full max-w-6xl md:gap-32 gap-24 py-32 md:py-40'>
         <div className='flex flex-col md:flex-row w-full lg:gap-16 gap-6 md:gap-12 transition-all duration-500'>
           <div className='lg:w-[400px] md:w-[400px] w-32 h-32 rounded-full overflow-clip lg:shrink-0 relative md:h-auto md:max-h-[350px] lg:max-h-[500px] transition-all duration-500'>
-            <Image src='/images/kaviya_3.jpg' alt='placeholder' fill={true} className='object-cover object-[40%_top]' />
+            <Image
+              src='/images/kaviya_3.webp'
+              alt='placeholder'
+              fill={true}
+              className='object-cover object-[40%_top]'
+            />
           </div>
           <div className='flex flex-col items-start w-full gap-8'>
             <div className='flex flex-col items-start gap-1 self-stretch'>
