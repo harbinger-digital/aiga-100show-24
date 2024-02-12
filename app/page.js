@@ -6,6 +6,9 @@ import Spinner from './components/spinner'
 import Navbar from './components/navbar'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import Footer from './components/footer'
+import JudgesCard from './components/judgesCard'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -14,9 +17,13 @@ export default function Home() {
       <Spinner />
       <div className='flex flex-col gap-32 lg:gap-48 mx-auto w-full max-w-3xl items-center pt-[30vh] pb-[10vh] md:pb-[10vh] lg:pb-[20vh] h-md:pt-[34vh] h-lg:pt-[30vh] transition-all duration-500 z-30'>
         <Hero />
-        <div className='flex flex-col gap-6 w-full'>
-          <h2 className='font-bely uppercase text-3xl tracking-widest text-white'>About The Show</h2>
-          <p className='font-[350] text-lg leading-7 text-white'>
+        <div className='flex flex-col gap-8 w-full'>
+          <div className='flex justify-center items-center gap-8 self-stretch'>
+            <div className='grow h-px relative bg-white' />
+            <h2 className='font-bely uppercase text-3xl tracking-widest text-white text-center'>About The Show</h2>
+            <div className='grow h-px relative bg-white' />
+          </div>
+          <p className='font-[350] text-lg leading-7 text-white text-center'>
             The 100 Show recognizes the best creative work from designers within Kentucky and Southern Indiana.
             Agencies, freelancers, and in-house teams are celebrated for their efforts in a range of design disciplines
             including advertising, branding, packaging, environmental design, interactive design, service design, and
@@ -24,8 +31,84 @@ export default function Home() {
             that is Best of Show.
           </p>
         </div>
-        <div className='flex flex-col gap-6 w-full'>
-          <h2 className='font-bely uppercase text-3xl tracking-widest text-white'>FAQs</h2>
+        <div className='flex flex-col gap-8 w-full'>
+          <div className='flex justify-center items-center gap-8 self-stretch'>
+            <div className='grow h-px relative bg-white' />
+            <h2 className='font-bely uppercase text-3xl tracking-widest text-white text-center'>Keynote Speaker</h2>
+            <div className='grow h-px relative bg-white' />
+          </div>
+          <Link
+            className='w-full flex-col justify-start items-start inline-flex rounded overflow-clip group'
+            href='/keynote'
+          >
+            <div className='self-stretch h-[350px] justify-start items-start inline-flex overflow-clip'>
+              <div className='grow shrink self-stretch relative group-hover:scale-105 transition-all duration-500'>
+                <Image
+                  className='w-[300px] object-cover'
+                  src='/images/Kaviya_1.jpg'
+                  fill={true}
+                  alt='Kaviya Ravi sitting on a chair with a yellow background'
+                />
+              </div>
+              <div className='grow shrink basis-0 self-stretch relative hidden sm:block group-hover:scale-105 transition-all duration-500'>
+                <Image
+                  className='object-cover'
+                  src='/images/Kaviya_2.jpeg'
+                  fill={true}
+                  alt='art piece by Kaviya Ravi'
+                />
+              </div>
+            </div>
+            <div className='flex flex-col justify-between w-full gap-2 p-4 backdrop-blur-[4px] bg-black/[6%] border border-1 border-black/[8%] group-hover:bg-black/10 transition-all duration-300'>
+              <h3 className='text-white font-[800] text-3xl uppercase tracking-widest'>Kaviya Ravi</h3>
+              <p className='text-white font-[400] text-sm md:text-base uppercase tracking-widest'>
+                Artist, maker, designer, biochemist & small business owner
+              </p>
+            </div>
+          </Link>
+        </div>
+        <div className='flex flex-col gap-8 w-full'>
+          <div className='flex justify-center items-center gap-8 self-stretch'>
+            <div className='grow h-px relative bg-white' />
+            <h2 className='font-bely uppercase text-3xl tracking-widest text-white text-center'>Judges</h2>
+            <div className='grow h-px relative bg-white' />
+          </div>
+          <div className='flex gap-4 w-full flex-col md:flex-row'>
+            <JudgesCard
+              src='/judges/shivani-parasnis.jpg'
+              alt='Shivani Parasnis Headshot'
+              name='Shivani Parasnis'
+              description='typographer, graphic designer'
+              href='/shivani-parasnis'
+              position='top'
+              hoverSrc='/judges/shivani-parasnis-hover.png'
+            />
+            <JudgesCard
+              src='/judges/george-garrastegui.jpg'
+              alt='Geoge Garrastregui Headshot'
+              name='George Garrastegui, Jr.'
+              description='educator, designer'
+              href='/george-garrastegui'
+              position='top'
+              hoverSrc='/judges/george-garrastegui-hover.png'
+            />
+            <JudgesCard
+              src='/judges/jeff-minnichbach.jpg'
+              alt='Jeff Minnichbach Headshot'
+              name='Jeff Minnichbach'
+              description='graphic designer'
+              href='/jeff-minnichbach'
+              position='top'
+              hoverSrc='/judges/jeff-minnichbach-hover.png'
+            />
+          </div>
+        </div>
+        <div className='flex flex-col gap-8 w-full'>
+          <div className='flex justify-center items-center gap-8 self-stretch'>
+            <div className='w-full h-px relative bg-white' />
+            <h2 className='font-bely uppercase text-3xl tracking-widest text-white'>FAQs</h2>
+            <div className='w-full h-px relative bg-white' />
+          </div>
           <div className='flex w-full'>
             <Accordion type='single' collapsible className='w-full flex flex-col gap-2 '>
               <AccordionItem value='item-1'>
