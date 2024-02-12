@@ -62,16 +62,16 @@ export default function Page() {
           </div>
           <div className='grid grid-col-1 sm:grid-cols-2 gap-4'>
             <div className='w-full rounded overflow-clip relative aspect-square'>
-              <Image src='/images/gallery_1.jpeg' alt='Image 1' layout='fill' objectFit='cover' />
+              <Image src='/images/gallery_1.jpeg' alt='Image 1' layout='fill' className='object-cover' />
             </div>
             <div className='w-full rounded overflow-clip relative aspect-square'>
-              <Image src='/images/gallery_2.jpeg' alt='Image 2' layout='fill' objectFit='cover' />
+              <Image src='/images/gallery_2.jpeg' alt='Image 2' layout='fill' className='object-cover' />
             </div>
             <div className='w-full rounded overflow-clip relative aspect-square'>
-              <Image src='/images/gallery_3.jpeg' alt='Image 3' layout='fill' objectFit='cover' />
+              <Image src='/images/gallery_3.jpeg' alt='Image 3' layout='fill' className='object-cover' />
             </div>
             <div className='w-full rounded overflow-clip relative aspect-square'>
-              <Image src='/images/gallery_4.jpeg' alt='Image 3' layout='fill' objectFit='cover' />
+              <Image src='/images/gallery_4.jpeg' alt='Image 3' layout='fill' className='object-cover' />
             </div>
           </div>
         </div>
