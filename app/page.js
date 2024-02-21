@@ -9,8 +9,20 @@ import Footer from './components/footer'
 import JudgesCard from './components/judgesCard'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
+import { PlusIcon, MinusIcon } from '@radix-ui/react-icons'
+import WinnerCard from './components/winnerCard'
+import { useState, useEffect } from 'react'
+import winnersData from '../data/winnersData.json'
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    setIsMobile(window.matchMedia('(max-width: 767px)').matches)
+  }, [])
+
   return (
     <div className='font-geist px-6 sm:px-8 md:px-16 transition-all duration-500 relative'>
       <Navbar />
@@ -99,6 +111,51 @@ export default function Home() {
               position='top'
             />
           </div>
+        </div>
+        <div className='flex flex-col gap-8 w-full'>
+          <div className='flex justify-center items-center gap-8 self-stretch'>
+            <div className='grow h-px relative bg-white' />
+            <h2 className='font-bely uppercase text-3xl tracking-widest text-white text-center'>2023 Winners</h2>
+            <div className='grow h-px relative bg-white' />
+          </div>
+          <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
+            {winnersData.slice(0, isMobile ? 8 : 9).map((item, index) => (
+              <WinnerCard key={index} {...item} />
+            ))}
+          </div>
+          <Collapsible className='flex flex-col gap-8 items-center relative' open={isOpen} onOpenChange={setIsOpen}>
+            <CollapsibleTrigger className='flex flex-col gap-4 sticky top-16 md:top-32 z-10 left-auto right-auto'>
+              {isOpen ? (
+                <div className='group flex'>
+                  <div className='flex gap-3 px-6 py-4 justify-center items-end z-10'>
+                    <p className='text-white font-[800] text-base leading-none uppercase tracking-widest text-center'>
+                      Show Less
+                    </p>
+                    <MinusIcon className='w-5 h-5 text-white' />
+                  </div>
+                  <div className='absolute top-0 right-0 bottom-0 left-0 rounded-full bg-black/[6%] shadow-lg shadow-[#5E3687]/[20%] border border-1 border-black/[8%] group-hover:bg-black/10 transition-all duration-300'></div>
+                  <div className='absolute top-0 right-0 bottom-0 left-0 rounded-full -z-10 bg-[#9F6DB7]/[70%] backdrop-blur-[8px]'></div>
+                </div>
+              ) : (
+                <div className='group flex relative'>
+                  <div className='flex gap-3 px-6 py-4 justify-center items-end z-10'>
+                    <p className='text-white font-[800] text-base leading-none uppercase tracking-widest text-center'>
+                      Show More
+                    </p>
+                    <PlusIcon className='w-5 h-5 text-white' />
+                  </div>
+                  <div className='absolute top-0 right-0 bottom-0 left-0 rounded-full backdrop-blur-[4px] bg-black/[6%] border border-1 border-black/[8%] group-hover:bg-black/10 transition-all duration-300'></div>
+                </div>
+              )}
+            </CollapsibleTrigger>
+            <CollapsibleContent className='w-full'>
+              <div className='grid grid-col-1 grid-cols-2 md:grid-cols-3 gap-4'>
+                {winnersData.slice(isMobile ? 8 : 9).map((item, index) => (
+                  <WinnerCard key={index} {...item} />
+                ))}
+              </div>
+            </CollapsibleContent>
+          </Collapsible>
         </div>
         <div className='flex flex-col gap-8 w-full'>
           <div className='flex justify-center items-center gap-8 self-stretch'>
