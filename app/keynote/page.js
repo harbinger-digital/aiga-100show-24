@@ -2,7 +2,6 @@ import Navbar from '../components/navbar'
 import Image from 'next/image'
 import Footer from '../components/footer'
 import Background from '../components/background'
-import Link from 'next/link'
 
 export default function Page() {
   return (
@@ -11,11 +10,11 @@ export default function Page() {
       <div className='flex flex-col mx-auto w-full max-w-6xl md:gap-32 gap-24 py-32 md:py-40'>
         <div className='flex flex-col md:flex-row w-full lg:gap-16 gap-6 md:gap-12 transition-all duration-500'>
           <div className='lg:w-[400px] md:w-[400px] w-32 h-32 rounded-full overflow-clip lg:shrink-0 relative md:h-auto md:max-h-[350px] lg:max-h-[500px] transition-all duration-500'>
-            <Image src='/images/kaviya_3.jpg' alt='placeholder' fill={true} className='object-cover object-[40%_top]' />
+            <Image src='/images/kaviya-keynote-hover.png' alt='placeholder' fill={true} className='object-cover' />
           </div>
           <div className='flex flex-col items-start w-full gap-8'>
             <div className='flex flex-col items-start gap-1 self-stretch'>
-              <h1 className='self-stretch text-white font-bely text-5xl leading-tighter font-normal tracking-widest uppercase'>
+              <h1 className='self-stretch text-white font-bely text-3xl lg:text-5xl leading-tighter font-normal tracking-widest uppercase'>
                 Kaviya Ravi
               </h1>
               <h2 className='self-stretch text-white text-lg font-[350] leading-7 tracking-[1.44px] capitalize'>
@@ -38,19 +37,19 @@ export default function Page() {
             </div>
             <div className='justify-center items-center gap-6 inline-flex'>
               <div className='w-6 h-6 relative'>
-                <Link href='/'>
+                <a href='https://khromophilia.com/' target='_blank'>
                   <Image src='/images/web_icon.svg' alt='Website' width='24' height='24' />
-                </Link>
+                </a>
               </div>
               <div className='w-6 h-6 relative'>
-                <Link href='/'>
+                <a href='https://www.instagram.com/kvyainc' target='_blank'>
                   <Image src='/images/insta_icon.svg' alt='Instagram' width='24' height='24' />
-                </Link>
+                </a>
               </div>
               <div className='w-6 h-6 relative'>
-                <Link href='/'>
+                <a href='https://www.linkedin.com/in/kaviya-ravi-65647450/' target='_blank'>
                   <Image src='/images/linkedIn_icon.svg' alt='LinkedIn' width='24' height='24' />
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -63,16 +62,16 @@ export default function Page() {
           </div>
           <div className='grid grid-col-1 sm:grid-cols-2 gap-4'>
             <div className='w-full rounded overflow-clip relative aspect-square'>
-              <Image src='/images/gallery_1.jpeg' alt='Image 1' layout='fill' objectFit='cover' />
+              <Image src='/images/gallery_1.jpeg' alt='Image 1' layout='fill' className='object-cover' />
             </div>
             <div className='w-full rounded overflow-clip relative aspect-square'>
-              <Image src='/images/gallery_2.jpeg' alt='Image 2' layout='fill' objectFit='cover' />
+              <Image src='/images/gallery_2.jpeg' alt='Image 2' layout='fill' className='object-cover' />
             </div>
             <div className='w-full rounded overflow-clip relative aspect-square'>
-              <Image src='/images/gallery_3.jpeg' alt='Image 3' layout='fill' objectFit='cover' />
+              <Image src='/images/gallery_3.jpeg' alt='Image 3' layout='fill' className='object-cover' />
             </div>
             <div className='w-full rounded overflow-clip relative aspect-square'>
-              <Image src='/images/gallery_4.jpeg' alt='Image 3' layout='fill' objectFit='cover' />
+              <Image src='/images/gallery_4.jpeg' alt='Image 3' layout='fill' className='object-cover' />
             </div>
           </div>
         </div>
