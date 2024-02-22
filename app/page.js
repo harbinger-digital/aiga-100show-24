@@ -149,7 +149,7 @@ export default function Home() {
               )}
             </CollapsibleTrigger>
             <CollapsibleContent className='w-full'>
-              <div className='grid grid-col-1 grid-cols-2 md:grid-cols-3 gap-4'>
+              <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
                 {winnersData.slice(isMobile ? 8 : 9).map((item, index) => (
                   <WinnerCard key={index} {...item} />
                 ))}

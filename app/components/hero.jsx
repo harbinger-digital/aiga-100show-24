@@ -31,8 +31,8 @@ export default function Hero() {
           </Link>
           <div className='absolute top-0 right-0 bottom-0 left-0 rounded-full backdrop-blur-[4px] bg-black/[6%] border border-1 border-black/[8%] group-hover:bg-black/10 transition-all duration-300'></div>
         </div>
-        {/* <Link href='/' className='flex justify-center items-center z-10'>
-          <p className='text-white font-[800] text-base uppercase tracking-widest underline'>purchase tickets</p>
+        {/* <Link href='https://www.eventbrite.com/e/2024-aiga-lou-top-100-show-tickets-821827447017' className='flex justify-center items-center z-10'>
+          <p className='text-white font-[800] text-base uppercase tracking-widest underline'>purchase event tickets!</p>
         </Link> */}
       </div>
     </div>
