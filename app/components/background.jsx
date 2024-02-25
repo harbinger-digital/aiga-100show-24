@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
@@ -17,7 +19,7 @@ export default function Background() {
         <div className='bg-gradient-to-b from-[transparent] to-[#906DBE] absolute right-0 left-0 top-0 h-[130vh] -z-30'></div>
         <div className='h-[130vh] absolute right-0 left-0 top-0 -z-40 mix-blend-overlay opacity-50'>
           <Image
-            src='/BackgroundTexture.png'
+            src='/BackgroundTexture.webp'
             alt='Background Texture'
             fill={true}
             objectFit='cover'
@@ -74,7 +76,7 @@ export default function Background() {
       <div
         className='bg-scroll bg-repeat h-[150dvh] mix-blend-overlay opacity-40 fixed left-0 right-0 bottom-[-150px] -z-40'
         style={{
-          backgroundImage: 'url(/BackgroundTexture.png)',
+          backgroundImage: 'url(/BackgroundTexture.webp)',
           backgroundSize: '60%',
           backgroundPosition: 'top',
           backgroundRepeat: 'repeat',
