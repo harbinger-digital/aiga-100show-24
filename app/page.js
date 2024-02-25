@@ -118,11 +118,13 @@ export default function Home() {
         <div className='flex flex-col gap-8 w-full'>
           <div className='flex justify-center items-center gap-8 self-stretch'>
             <div className='grow h-px relative bg-white' />
-            <h2 className='font-bely uppercase text-3xl tracking-widest text-white text-center'>2023 Winners</h2>
+            <h2 className='font-bely uppercase text-3xl tracking-widest text-white text-center'>
+              Best Of 2023 Winners
+            </h2>
             <div className='grow h-px relative bg-white' />
           </div>
           <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
-            {winnersData.slice(0, isMobile ? 8 : 9).map((item, index) => (
+            {winnersData.slice(0, isMobile ? 4 : 6).map((item, index) => (
               <WinnerCard key={index} {...item} />
             ))}
           </div>
@@ -153,7 +155,7 @@ export default function Home() {
             </CollapsibleTrigger>
             <CollapsibleContent className='w-full'>
               <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
-                {winnersData.slice(isMobile ? 8 : 9).map((item, index) => (
+                {winnersData.slice(isMobile ? 4 : 6).map((item, index) => (
                   <WinnerCard key={index} {...item} />
                 ))}
               </div>
