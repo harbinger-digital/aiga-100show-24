@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { useScroll, useMotionValueEvent, motion, useAnimation } from 'framer-motion'
-import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 
 const navbarVariants = {
   initial: {
@@ -47,7 +46,7 @@ export default function Navbar() {
   const [timeLeft, setTimeLeft] = useState({})
 
   useEffect(() => {
-    const targetDate = new Date('2024-02-25T23:59:00-05:00') // set your target date here
+    const targetDate = new Date('2024-03-03T23:59:00-05:00') // set your target date here
 
     const calculateTimeLeft = () => {
       const difference = +targetDate - +new Date()
