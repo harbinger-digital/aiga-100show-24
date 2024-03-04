@@ -24,11 +24,11 @@ export default function Hero() {
       <div className='flex flex-col gap-4 items-center'>
         <div className='group flex relative'>
           <Link
-            href='https://aiga-chapters.secure-platform.com/a/page/chapters/louisville'
+            href='https://www.eventbrite.com/e/2024-aiga-lou-top-100-show-tickets-821827447017?aff=ebdssbdestsearch'
             className='flex gap-3 px-6 py-4 justify-center items-center z-10'
           >
             <p className='text-white font-[800] text-base uppercase tracking-widest text-center'>
-              Submit Work by mar&nbsp;3
+              Purchase Event Tickets
             </p>
           </Link>
           <div className='absolute top-0 right-0 bottom-0 left-0 rounded-full backdrop-blur-[4px] bg-black/[6%] border border-1 border-black/[8%] group-hover:bg-black/10 transition-all duration-300'></div>

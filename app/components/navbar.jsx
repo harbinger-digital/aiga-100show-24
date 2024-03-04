@@ -108,15 +108,15 @@ export default function Navbar() {
         <Image src='/Logo.png' alt='AIGA 100 Show Logo' width={120} height={32} className='h-8' />
       </Link>
       <div className='gap-2 hidden md:flex'>
-        {/* <div className='group flex relative' onMouseEnter={startAnimation} onMouseLeave={stopAnimation}>
+        <div className='group flex relative' onMouseEnter={startAnimation} onMouseLeave={stopAnimation}>
           <Link
-            href='/'
+            href='https://www.eventbrite.com/e/2024-aiga-lou-top-100-show-tickets-821827447017?aff=ebdssbdestsearch'
             className={`flex gap-3 px-6 py-4 rounded justify-center items-center transition-all duration-300 z-10 ${
               isScrolled ? 'group-hover:bg-black/10' : 'group-hover:bg-black/5'
             }`}
           >
             <Image src='/ticket.svg' alt='Submit Icon' width={20} height={20} />
-            <p className='text-white font-[800] text-base uppercase tracking-widest'>Tickets</p>
+            <p className='text-white font-[800] text-base uppercase tracking-widest'>Purchase Event Tickets</p>
           </Link>
           <motion.div
             className={`absolute top-0 right-0 bottom-0 left-0 rounded border border-1 transition-all  ${
@@ -127,8 +127,9 @@ export default function Navbar() {
             animate={isScrolled ? 'scrolled' : 'initial'}
             transition={{ duration: 0.8 }}
           ></motion.div>
-        </div> */}
-        <div className='group flex relative' onMouseEnter={startAnimation} onMouseLeave={stopAnimation}>
+        </div>
+
+        {/* <div className='group flex relative' onMouseEnter={startAnimation} onMouseLeave={stopAnimation}>
           <Link
             href='https://aiga-chapters.secure-platform.com/a/page/chapters/louisville'
             className={`flex gap-3 min-w-[334px] px-6 py-4 rounded justify-start items-center transition-all duration-300 z-10 ${
@@ -150,10 +151,10 @@ export default function Navbar() {
             animate={isScrolled ? 'scrolled' : 'initial'}
             transition={{ duration: 0.8 }}
           ></motion.div>
-        </div>
+        </div> */}
       </div>
       {/* mobile */}
-      <motion.div
+      {/* <motion.div
         className={`${
           isMobileNavOpen ? 'fixed top-0 right-0 bottom-0 left-0 z-50' : 'hidden'
         } bg-black/80 backdrop-blur-lg flex flex-col justify-center items-center`}
@@ -172,7 +173,7 @@ export default function Navbar() {
             Close
           </button>
         </div>
-      </motion.div>
+      </motion.div> */}
       {/* <div className='flex md:hidden'>
         <div className='group flex relative' onMouseEnter={startAnimation} onMouseLeave={stopAnimation}>
           <button
