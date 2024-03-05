@@ -1,58 +1,72 @@
 [
   {
     "src": "/winners/100 Days of Centre Book - Marrow.png",
-    "name": "Marrow"
+    "name": "Marrow",
+    "category": "Best of Editorial Print"
   },
   {
     "src": "/winners/Downtown Louisville Street Banners - Block by Block.png",
-    "name": "Block by Block"
+    "name": "Block by Block",
+    "category": "Best of Environmental Design and Wayfinding"
   },
   {
     "src": "/winners/Housing Discrimination Outdoor Campaign - An Agency.png",
-    "name": "An Agency"
+    "name": "An Agency",
+    "category": "Best of Social Good"
   },
   {
     "src": "/winners/Juniper - University of Louisville.png",
-    "name": "University of Louisville"
+    "name": "University of Louisville",
+    "category": "Best of Packaging"
   },
   {
     "src": "/winners/Kentucky Science Center 2022 Impact Report - Kentucky Science Center.png",
-    "name": "Kentucky Science Center"
+    "name": "Kentucky Science Center",
+    "category": "Best of Non-profit Work"
   },
   {
     "src": "/winners/LCAST - Slingshot.png",
-    "name": "Slingshot"
+    "name": "Slingshot",
+    "category": "Best of UX Design"
   },
   {
     "src": "/winners/Out Loud Louisville - University of Louisville, Hite Institute of Art + Design.png",
-    "name": "University of Louisville"
+    "name": "University of Louisville",
+    "category": "Best of Student Work"
   },
   {
     "src": "/winners/Some Days Feel Stormy - Shannon McCarthy.png",
-    "name": "Shannon McCarthy"
+    "name": "Shannon McCarthy",
+    "category": "Best of Illustration"
   },
   {
     "src": "/winners/Tallest Tree - Mediocre Creative.png",
-    "name": "Mediocre Creative"
+    "name": "Mediocre Creative",
+    "category": "Best of Branding and Logos"
   },
   {
     "src": "/winners/This is Your Starting Point - Marrow.png",
-    "name": "Marrow"
+    "name": "Marrow",
+    "category": "Best of Print and Show"
   },
   {
     "src": "/winners/Tyler Gaffalione Vintage Jockey - Priceweber for Bloodhorse Publications.png",
-    "name": "Priceweber"
+    "name": "Priceweber",
+    "category": "Best of Photography"
   },
   {
     "src": "/winners/Wedding Invitation - University of Louisville, Hite Institute of Art + Design.png",
-    "name": "Christie Kremer"
+    "name": "Christie Kremer",
+    "category": "Best of Typography and Hand Lettering"
   },
   {
     "src": "/winners/Wonderful Party - An Agency.png",
-    "name": "An Agency"
+    "name": "An Agency",
+    "category": "Best of Motion Graphics, Animation, and Video"
   },
   {
     "src": "/winners/Talk Abroad - Bullhorn.png",
-    "name": "Bullhorn"
+    "name": "Bullhorn",
+    "category": "Best of Web and Digital"
   }
 ]
